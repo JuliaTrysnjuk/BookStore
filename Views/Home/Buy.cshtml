@@ -1,19 +1,12 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Покупка</title>
-</head>
-<body>
     <div>
         <h3>Форма оформлення покупки</h3>
-        <form method="post">
+        <form method="post" action="">
             <input type="hidden" value="@ViewBag.BookId" name="BookId" />
             <table>
                 <tr>
@@ -31,6 +24,3 @@
             </table>
         </form>
     </div>
-
-</body>
-</html>
